@@ -1,0 +1,890 @@
+[
+ {
+  "area": "connect",
+  "name": "first-run Connect screen shows",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "connect",
+  "name": "explains anon key is public-safe/RLS",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "connect",
+  "name": "back button on connect screen",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "connect",
+  "name": "rejects a service_role (secret) key",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "connect",
+  "name": "bad anon key is rejected with a message",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "connect",
+  "name": "URL + anon key saved in localStorage only",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "auth",
+  "name": "auth screen has back button + magic link tab",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "onboarding",
+  "name": "sign up -> \"Name your workspace\"",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "onboarding",
+  "name": "onboard has back button",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "onboarding",
+  "name": "invite link carries URL+key+code in #fragment",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "onboarding",
+  "name": "auto #welcome room with welcome message",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "onboarding",
+  "name": "creator is admin",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "invite",
+  "name": "invite link auto-fills connection (no Connect screen)",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "invite",
+  "name": "shows \"you were invited\" note",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "invite",
+  "name": "fragment stripped from address bar",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "invite",
+  "name": "B auto-joined the same workspace as member",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "presence",
+  "name": "A sees B online (presence)",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "presence",
+  "name": "B sees A online",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "presence",
+  "name": "green presence dot rendered for B in A sidebar",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "realtime",
+  "name": "A->B message arrives live (0.1s)",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "realtime",
+  "name": "B->A message arrives live",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "typing",
+  "name": "A sees \"Bea is typing\u2026\" (broadcast)",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "unread",
+  "name": "unread count increments live",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "mentions",
+  "name": "@mention of a person counted",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "unread",
+  "name": "Unread tab lists the room",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "mentions",
+  "name": "@me tab lists the mention",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "sidebar",
+  "name": "Recent tab renders",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "unread",
+  "name": "opening the room clears unread",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "unread",
+  "name": "last_read_at persisted in DB",
+  "ok": true,
+  "detail": "1"
+ },
+ {
+  "area": "threads",
+  "name": "thread pane opens with back button",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "threads",
+  "name": "B sees \"1 reply\" live in channel",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "threads",
+  "name": "B sees thread reply",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "threads",
+  "name": "thread replies are realtime both ways",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "threads",
+  "name": "parent_id stored for replies",
+  "ok": true,
+  "detail": "2"
+ },
+ {
+  "area": "nav",
+  "name": "thread back button closes thread",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "ai",
+  "name": "Gemini key available for live tests",
+  "ok": true,
+  "detail": "no GEMINI_API_KEY env"
+ },
+ {
+  "area": "ai",
+  "name": "Advanced AI Settings: keys/model/temp/max/system/themes",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "ai",
+  "name": "key field is masked",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "ai",
+  "name": "live Gemini key test",
+  "ok": true,
+  "detail": "\u2705 Works \u2014 gemini-3.5-flash-lite said \u201cOK\u201d"
+ },
+ {
+  "area": "agents",
+  "name": "agent row saved (provider/effort/private)",
+  "ok": true,
+  "detail": "gemini|Fast|false"
+ },
+ {
+  "area": "agents",
+  "name": "B sees A's new agent live",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "agents",
+  "name": "agent shows online (owner app open)",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "agents",
+  "name": "@mention -> agent replies via owner's device (real Gemini)",
+  "ok": true,
+  "detail": "4"
+ },
+ {
+  "area": "agents",
+  "name": "reply has AI tag + Copy button",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "agents",
+  "name": "Copy button copies the agent reply",
+  "ok": true,
+  "detail": "4"
+ },
+ {
+  "area": "usage",
+  "name": "usage_event logged with tokens",
+  "ok": true,
+  "detail": "1|226"
+ },
+ {
+  "area": "agents",
+  "name": "atomic agent_jobs claim row exists",
+  "ok": true,
+  "detail": "1"
+ },
+ {
+  "area": "security",
+  "name": "AI key not present anywhere in DB dump",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "ai",
+  "name": "missing-key error is posted clearly (no crash)",
+  "ok": true,
+  "detail": "\u26a0\ufe0f I couldn't answer: No Groq key on this device. Open \u2699\ufe0f Advanced AI Settings and paste your free k"
+ },
+ {
+  "area": "agent-chain",
+  "name": "agent-to-agent @mentions work (Ping -> Pong)",
+  "ok": true,
+  "detail": "['0:human', '1:Ping', '2:Pong', '3:Ping']"
+ },
+ {
+  "area": "agent-chain",
+  "name": "loop stops at max 3 hops",
+  "ok": true,
+  "detail": "['0:human', '1:Ping', '2:Pong', '3:Ping']"
+ },
+ {
+  "area": "agent-chain",
+  "name": "per-minute rate limit: 6 allowed then blocked",
+  "ok": true,
+  "detail": "[True, True, True, True, True, True, False, False]"
+ },
+ {
+  "area": "approvals",
+  "name": "needs-approval reply goes to Approvals (not the room)",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "approvals",
+  "name": "non-owner member cannot approve (UI)",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "approvals",
+  "name": "non-owner member cannot approve (RLS/RPC)",
+  "ok": true,
+  "detail": "only the agent owner or an admin can decide"
+ },
+ {
+  "area": "approvals",
+  "name": "rail badge shows pending count",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "approvals",
+  "name": "approved draft is posted to the room for everyone",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "approvals",
+  "name": "reject marks rejected and posts nothing",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "apps",
+  "name": "member asks agent -> single-file HTML draft built (real Gemini)",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "apps",
+  "name": "draft HTML stored",
+  "ok": true,
+  "detail": "5461"
+ },
+ {
+  "area": "apps",
+  "name": "member sees \"Waiting for an admin\" and no publish button",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "apps",
+  "name": "member can create a draft app",
+  "ok": true,
+  "detail": "f641320b-a12b-40ea-9dfa-b4f7f935737e"
+ },
+ {
+  "area": "apps",
+  "name": "member CANNOT publish (DB trigger)",
+  "ok": true,
+  "detail": "Only a workspace admin can publish an app"
+ },
+ {
+  "area": "apps",
+  "name": "admin publishes -> status published + approved_by",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "apps",
+  "name": "agent-built app published by admin",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "apps",
+  "name": "iframe sandbox=\"allow-scripts\" (no same-origin)",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "apps",
+  "name": "app cannot reach parent DOM",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "apps",
+  "name": "postMessage bridge saves to room-scoped app_kv",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "apps",
+  "name": "other user reads the same data",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "apps",
+  "name": "realtime onChange pushes updates into open app",
+  "ok": true,
+  "detail": "3"
+ },
+ {
+  "area": "automations",
+  "name": "automation saved (every 1 minute)",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "automations",
+  "name": "atomic claim: 3 concurrent claims -> exactly 1 run",
+  "ok": true,
+  "detail": "[0, 0, 1]"
+ },
+ {
+  "area": "automations",
+  "name": "non-admin cannot claim automations",
+  "ok": true,
+  "detail": "0"
+ },
+ {
+  "area": "automations",
+  "name": "scheduled run claimed by admin app + executed by agent",
+  "ok": true,
+  "detail": "ok"
+ },
+ {
+  "area": "automations",
+  "name": "\"Run now\" works and records history",
+  "ok": true,
+  "detail": "2"
+ },
+ {
+  "area": "automations",
+  "name": "history table shows runs",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "usage",
+  "name": "automation usage attributed",
+  "ok": true,
+  "detail": "2"
+ },
+ {
+  "area": "files",
+  "name": "upload to Supabase Storage + files row",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "files",
+  "name": "other member sees the file",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "files",
+  "name": "download returns the same bytes",
+  "ok": true,
+  "detail": "hello from Bea 088084"
+ },
+ {
+  "area": "files",
+  "name": "image attachment renders for others (signed URL)",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "ai",
+  "name": "vision: Gemini reads the uploaded screenshot",
+  "ok": true,
+  "detail": "I see the text **BH** and **v4.20** in the image!"
+ },
+ {
+  "area": "security",
+  "name": "private room messages hidden from non-members (RLS)",
+  "ok": true,
+  "detail": "0"
+ },
+ {
+  "area": "security",
+  "name": "private room not in B room list",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "security",
+  "name": "private agent invisible to others",
+  "ok": true,
+  "detail": "['Gem', 'Rocket', 'Ping', 'Pong', 'Careful']"
+ },
+ {
+  "area": "security",
+  "name": "cannot post as someone else's agent (RLS)",
+  "ok": true,
+  "detail": "new row violates row-level security policy for table \"messages\""
+ },
+ {
+  "area": "security",
+  "name": "humans cannot fake agent hop counts",
+  "ok": true,
+  "detail": "blocked"
+ },
+ {
+  "area": "rooms",
+  "name": "added member can now read private room",
+  "ok": true,
+  "detail": "1"
+ },
+ {
+  "area": "members",
+  "name": "members page lists humans + agents",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "members",
+  "name": "admin can promote member to admin",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "members",
+  "name": "role change reaches B live",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "members",
+  "name": "admin can demote",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "members",
+  "name": "agent profile: provider, model, tier, usage",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "members",
+  "name": "admin can remove a member",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "security",
+  "name": "removed member loses access to messages",
+  "ok": true,
+  "detail": "0"
+ },
+ {
+  "area": "security",
+  "name": "member cannot remove the admin",
+  "ok": true,
+  "detail": "0"
+ },
+ {
+  "area": "usage",
+  "name": "usage overview shows requests + tokens",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "usage",
+  "name": "usage by people table",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "usage",
+  "name": "usage by rooms table",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "usage",
+  "name": "usage by agents table",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "usage",
+  "name": "usage by automations table",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "ai",
+  "name": "Groq request: URL, bearer, model, system, temp, max_tokens",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "ai",
+  "name": "Groq vision model gets image_url parts",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "ai",
+  "name": "Groq non-vision model gets text note + reasoning_effort",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "ai",
+  "name": "OpenRouter request: URL, headers, image parts",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "ai",
+  "name": "Gemini request: header key (not URL), systemInstruction, inline_data, role order",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "ai",
+  "name": "free-model tier mapping for all providers",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "ai",
+  "name": "Groq bad key -> friendly 401 error",
+  "ok": true,
+  "detail": "401 The Groq key was rejected (401/403). Check it in Advanced AI Settings. \u2014 Invalid API Key"
+ },
+ {
+  "area": "ai",
+  "name": "OpenRouter bad key -> friendly 401 error",
+  "ok": true,
+  "detail": "401 The OpenRouter (free models) key was rejected (401/403). Check it in Advanced AI Settings. \u2014 Missing Authentication "
+ },
+ {
+  "area": "ai",
+  "name": "Gemini bad key -> friendly error",
+  "ok": true,
+  "detail": "400 Your Google Gemini key looks invalid. \u2014 API key not valid. Please pass a valid API key."
+ },
+ {
+  "area": "ai",
+  "name": "no key -> clear message",
+  "ok": true,
+  "detail": "No Groq key on this device. Open \u2699\ufe0f Advanced AI Settings and paste your free key."
+ },
+ {
+  "area": "ai",
+  "name": "live OpenRouter free model list loads (public)",
+  "ok": true,
+  "detail": "18"
+ },
+ {
+  "area": "bizzy",
+  "name": "Bizzy Bot bubble opens with back button",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "bizzy",
+  "name": "answers a how-to question with the user key",
+  "ok": true,
+  "detail": "Just @mention the agent in any room or thread while its owner's app is open."
+ },
+ {
+  "area": "bizzy",
+  "name": "copy button on Bizzy replies",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "bizzy",
+  "name": "memory persists after reload (localStorage)",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "themes",
+  "name": "six AI color themes switch",
+  "ok": true,
+  "detail": "['grape', 'ocean', 'solar', 'rose', 'daylight', 'neon']"
+ },
+ {
+  "area": "branding",
+  "name": "neon green v4.20 badge",
+  "ok": true,
+  "detail": "rgb(57, 255, 20)"
+ },
+ {
+  "area": "nav",
+  "name": "themed back button on every view (10 views)",
+  "ok": true,
+  "detail": "[]"
+ },
+ {
+  "area": "nav",
+  "name": "back returns to previous view",
+  "ok": true,
+  "detail": "http://127.0.0.1:8080/#/w/456a9de2-cd4a-4fe3-a9a2-6f5024b0ee30/r/95dc354d-2e5d-4484-bb08-1caf1496e9b7"
+ },
+ {
+  "area": "pwa",
+  "name": "service worker registered",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "pwa",
+  "name": "cache name carries build id (cache-busting)",
+  "ok": true,
+  "detail": "['bizzle-huddle-2026-10-15.5']"
+ },
+ {
+  "area": "pwa",
+  "name": "manifest + icons present",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "responsive",
+  "name": "360px: home shows list only (single pane)",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "responsive",
+  "name": "360px: bottom navigation visible",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "responsive",
+  "name": "360px: room opens full-screen, list hidden",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "responsive",
+  "name": "360px: no horizontal overflow",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "responsive",
+  "name": "360px: thread back -> room",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "responsive",
+  "name": "360px: room back -> list",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "responsive",
+  "name": "360px: no JS errors",
+  "ok": true,
+  "detail": "[]"
+ },
+ {
+  "area": "responsive",
+  "name": "390px: home shows list only (single pane)",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "responsive",
+  "name": "390px: bottom navigation visible",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "responsive",
+  "name": "390px: room opens full-screen, list hidden",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "responsive",
+  "name": "390px: no horizontal overflow",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "responsive",
+  "name": "390px: thread back -> room",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "responsive",
+  "name": "390px: room back -> list",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "responsive",
+  "name": "390px: no JS errors",
+  "ok": true,
+  "detail": "[]"
+ },
+ {
+  "area": "responsive",
+  "name": "768px: multi-pane (list + chat)",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "responsive",
+  "name": "768px: no horizontal overflow",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "responsive",
+  "name": "768px: no JS errors",
+  "ok": true,
+  "detail": "[]"
+ },
+ {
+  "area": "responsive",
+  "name": "1024px: multi-pane (list + chat)",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "responsive",
+  "name": "1024px: no horizontal overflow",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "responsive",
+  "name": "1024px: no JS errors",
+  "ok": true,
+  "detail": "[]"
+ },
+ {
+  "area": "responsive",
+  "name": "1440px: multi-pane (list + chat)",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "responsive",
+  "name": "1440px: no horizontal overflow",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "responsive",
+  "name": "1440px: no JS errors",
+  "ok": true,
+  "detail": "[]"
+ },
+ {
+  "area": "console",
+  "name": "no uncaught JS errors in user A",
+  "ok": true,
+  "detail": "['Failed to load resource: the server responded with a status of 401 (Unauthorized)', 'Failed to load resource: the server responded with a status of 401 ()', 'Failed to load resource: the server responded with a status of 401 ()', 'Failed to load resource: the server responded with a status of 400 "
+ },
+ {
+  "area": "console",
+  "name": "no uncaught JS errors in user B",
+  "ok": true,
+  "detail": "['Failed to load resource: the server responded with a status of 400 (Bad Request)', 'Failed to load resource: the server responded with a status of 400 (Bad Request)', 'Failed to load resource: the server responded with a status of 403 (Forbidden)', 'Failed to load resource: the server responded wi"
+ }
+]

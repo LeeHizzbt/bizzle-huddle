@@ -1,0 +1,7 @@
+{
+  "appId": "com.nunyabizz.huddle",
+  "appName": "Bizzle Huddle",
+  "webDir": "docs",
+  "android": { "allowMixedContent": false },
+  "server": { "androidScheme": "https" }
+}

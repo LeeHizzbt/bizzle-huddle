@@ -1,0 +1,26 @@
+[
+ {
+  "area": "real",
+  "name": "auth settings reachable with publishable key",
+  "ok": true,
+  "detail": "200"
+ },
+ {
+  "area": "real",
+  "name": "email provider enabled",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "real",
+  "name": "connect screen detects missing schema with a clear message",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "area": "real",
+  "name": "no uncaught JS errors",
+  "ok": true,
+  "detail": "[]"
+ }
+]

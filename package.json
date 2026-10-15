@@ -1,0 +1,15 @@
+{
+  "name": "bizzle-huddle",
+  "version": "4.20.0",
+  "private": true,
+  "description": "Bizzle Huddle v4.20: free multiplayer AI workspace (static PWA + Capacitor Android shell)",
+  "license": "MIT",
+  "scripts": {
+    "android:sync": "npx cap sync android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.6.9",
+    "@capacitor/cli": "^7.6.9",
+    "@capacitor/core": "^7.6.9"
+  }
+}

@@ -1,0 +1,25 @@
+# signing material: NEVER commit
+keystore/
+*.jks
+*.keystore
+keystore.properties
+# env / secrets
+.env
+.env.*
+*.env
+# deps & build outputs
+node_modules/
+android/app/build/
+android/build/
+android/.gradle/
+android/local.properties
+android/app/release/
+android/capacitor-cordova-android-plugins/build/
+*.apk
+*.aab
+# supabase local state
+supabase/.temp/
+supabase/.branches/
+# misc
+__pycache__/
+.DS_Store
