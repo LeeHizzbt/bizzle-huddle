@@ -226,6 +226,12 @@ async function afterLogin() {
   var startHash = location.hash;
   try {
     if (/access_token/.test(location.hash)) history.replaceState(null, '', '#/');
+    // the cached session may belong to an account that was deleted on the server: verify it once
+    var gu = await S.sb.auth.getUser();
+    if (gu.error && gu.error.status && gu.error.status >= 400 && gu.error.status < 500) {
+      try { await S.sb.auth.signOut({ scope: 'local' }); } catch (e) {}
+      S.user = null; loggingIn = false; renderAuth(); toast('Your session ended (account not found). Please sign in or sign up again.', true); return;
+    }
     await loadProfile();
     var code = lsGet(LS.invite, null);
     if (code) {
@@ -262,8 +268,9 @@ function renderFatal(e) {
   var msg = e && e.message || String(e);
   var hint = /relation .* does not exist|PGRST20|schema cache|Could not find/i.test(msg) ? '<div class="note">It looks like the database tables are missing. Open your Supabase SQL editor and run <b>schema.sql</b> (see SETUP.md), then reload.</div>' : '';
   $('#app').innerHTML = '<div class="screen"><div class="card"><div class="screen-head">' + backBtn('connect') + '<h2>Something went wrong</h2></div><p class="muted">' + esc(msg) + '</p>' + hint +
-    '<div class="row wrap"><button class="btn primary" onclick="location.reload()">Reload</button><button class="btn" id="fatal-conn">Change Supabase connection</button></div></div></div>';
+    '<div class="row wrap"><button class="btn primary" onclick="location.reload()">Reload</button><button class="btn" id="fatal-out">Sign out</button><button class="btn" id="fatal-conn">Change Supabase connection</button></div></div></div>';
   $('#fatal-conn').onclick = function () { renderConnect(); };
+  $('#fatal-out').onclick = async function () { try { await S.sb.auth.signOut({ scope: 'local' }); } catch (e) {} location.hash = '#/'; location.reload(); };
 }
 
 /* ---------------- screens: connect / auth / onboarding ---------------- */

@@ -357,7 +357,7 @@
   "area": "apps",
   "name": "draft HTML stored",
   "ok": true,
-  "detail": "5461"
+  "detail": "7942"
  },
  {
   "area": "apps",
@@ -369,7 +369,7 @@
   "area": "apps",
   "name": "member can create a draft app",
   "ok": true,
-  "detail": "f641320b-a12b-40ea-9dfa-b4f7f935737e"
+  "detail": "598d9815-78f5-496e-b381-3478a57090c0"
  },
  {
   "area": "apps",
@@ -429,7 +429,7 @@
   "area": "automations",
   "name": "atomic claim: 3 concurrent claims -> exactly 1 run",
   "ok": true,
-  "detail": "[0, 0, 1]"
+  "detail": "[1, 0, 0]"
  },
  {
   "area": "automations",
@@ -477,7 +477,7 @@
   "area": "files",
   "name": "download returns the same bytes",
   "ok": true,
-  "detail": "hello from Bea 088084"
+  "detail": "hello from Bea 098828"
  },
  {
   "area": "files",
@@ -489,7 +489,7 @@
   "area": "ai",
   "name": "vision: Gemini reads the uploaded screenshot",
   "ok": true,
-  "detail": "I see the text **BH** and **v4.20** in the image!"
+  "detail": "The image shows the text **BH** and **v4.20** in bright green."
  },
  {
   "area": "security",
@@ -681,7 +681,7 @@
   "area": "bizzy",
   "name": "answers a how-to question with the user key",
   "ok": true,
-  "detail": "Just @mention the agent in any room or thread while its owner's app is open."
+  "detail": "To make an agent reply, simply @mention it in a chat message while its owner's app is open."
  },
  {
   "area": "bizzy",
@@ -717,7 +717,7 @@
   "area": "nav",
   "name": "back returns to previous view",
   "ok": true,
-  "detail": "http://127.0.0.1:8080/#/w/456a9de2-cd4a-4fe3-a9a2-6f5024b0ee30/r/95dc354d-2e5d-4484-bb08-1caf1496e9b7"
+  "detail": "http://127.0.0.1:8080/#/w/e53c0e48-07e7-4333-aa65-000c897e9eca/r/b7838884-472d-4fb1-98d4-7b2dcf296b16"
  },
  {
   "area": "pwa",
@@ -729,7 +729,7 @@
   "area": "pwa",
   "name": "cache name carries build id (cache-busting)",
   "ok": true,
-  "detail": "['bizzle-huddle-2026-10-15.5']"
+  "detail": "['bizzle-huddle-2026-10-15.8']"
  },
  {
   "area": "pwa",

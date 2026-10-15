@@ -1,5 +1,5 @@
 {
- "stamp": "aj7v4q",
+ "stamp": "tjtuj5",
  "results": [
   {
    "area": "real",
@@ -28,6 +28,12 @@
   {
    "area": "onboarding",
    "name": "workspace created",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "onboarding",
+   "name": "step 2: invite-team screen",
    "ok": true,
    "detail": ""
   },
@@ -119,7 +125,7 @@
    "area": "usage",
    "name": "usage_event recorded with tokens",
    "ok": true,
-   "detail": "[{'id': 'e4ccae98-b470-46bb-9a06-9d22f6ef2d77', 'prompt_tokens': 196, 'completion_tokens': 1}]"
+   "detail": "[{'id': '7a9187b7-fef8-4e7b-a1ae-729879321228', 'prompt_tokens': 190, 'completion_tokens': 1}]"
   },
   {
    "area": "approvals",
@@ -143,7 +149,7 @@
    "area": "apps",
    "name": "member creates a draft app",
    "ok": true,
-   "detail": "7d8c2d19-d29e-4e3c-be13-a9aa5b1f6382"
+   "detail": "74dd64e4-e4dc-42fb-91c9-5a4069f7af56"
   },
   {
    "area": "apps",
@@ -155,7 +161,7 @@
    "area": "apps",
    "name": "admin publishes the app",
    "ok": true,
-   "detail": "[{'status': 'published', 'approved_by': '40f54d06-3b4a-4628-860e-27f163ca0e03'}]"
+   "detail": "[{'status': 'published', 'approved_by': '4e8146a3-3cf5-4264-a36e-6d651e84bd6b'}]"
   },
   {
    "area": "apps",
@@ -203,13 +209,13 @@
    "area": "files",
    "name": "upload to real Storage + files row",
    "ok": true,
-   "detail": "[{'name': 'huddle-rt-aj7v4q.txt', 'path': '4a90883c-c291-4c22-a48c-c019ffe9b31d/896ab28b-8d25-4941-9f84-2a8259682d75/022fe4c1-49a9-42ed-9516-89e156b00152-huddle-rt-aj7v4q.txt'}]"
+   "detail": "[{'name': 'huddle-rt-tjtuj5.txt', 'path': '48581533-fdde-4bce-8b63-0681047af2b7/8a5dd76c-403f-4106-83b2-8f4cf8811c43/148ca78b-73df-4a56-82b5-20deec96333f-huddle-rt-tjtuj5.txt'}]"
   },
   {
    "area": "files",
    "name": "other member downloads identical bytes",
    "ok": true,
-   "detail": "hello from Bob aj7v4q"
+   "detail": "hello from Bob tjtuj5"
   },
   {
    "area": "files",
