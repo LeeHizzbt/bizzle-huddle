@@ -1,26 +1,107 @@
-[
- {
-  "area": "real",
-  "name": "auth settings reachable with publishable key",
-  "ok": true,
-  "detail": "200"
- },
- {
-  "area": "real",
-  "name": "email provider enabled",
-  "ok": true,
-  "detail": ""
- },
- {
-  "area": "real",
-  "name": "connect screen detects missing schema with a clear message",
-  "ok": true,
-  "detail": ""
- },
- {
-  "area": "real",
-  "name": "no uncaught JS errors",
-  "ok": true,
-  "detail": "[]"
- }
-]
+{
+ "stamp": "vyal0k",
+ "results": [
+  {
+   "area": "real",
+   "name": "auth settings reachable with publishable key",
+   "ok": true,
+   "detail": "200"
+  },
+  {
+   "area": "real",
+   "name": "schema applied (REST sees public.workspaces)",
+   "ok": true,
+   "detail": "200"
+  },
+  {
+   "area": "connect",
+   "name": "Connect screen accepts the real project (publishable key)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "auth",
+   "name": "sign-up (password) on real project -> onboarding",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "onboarding",
+   "name": "workspace created",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "onboarding",
+   "name": "auto Welcome room",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "invite",
+   "name": "invite link carries url+key+code in the # fragment",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "invite",
+   "name": "invite link pre-fills the connection (no typing)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "invite",
+   "name": "B signs up and auto-joins the workspace",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "invite",
+   "name": "signed-in user opening the link joins too",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "presence",
+   "name": "both users see each other online",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "realtime",
+   "name": "message A -> B live",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "typing",
+   "name": "typing indicator reaches A",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "realtime",
+   "name": "message B -> A live",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "threads",
+   "name": "thread reply delivered live (B thread index)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "mentions",
+   "name": "@mention counted for B live",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "console",
+   "name": "no uncaught JS errors",
+   "ok": true,
+   "detail": "[]"
+  }
+ ]
+}

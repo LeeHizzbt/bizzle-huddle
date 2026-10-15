@@ -111,6 +111,23 @@ function handleAuthRedirectQuery() {
   if (q.get('hi')) lsSet(LS.invite, q.get('hi'));
   history.replaceState(null, '', location.pathname + location.hash);
 }
+/* Android app: invite links arriving as bizzlehuddle://join#/join?u=..&k=..&i=.. (or an https invite link shared to the app) */
+function appInviteLink() { var l = inviteLink(); return 'bizzlehuddle://join' + l.slice(l.indexOf('#/join')); }
+function handleAppUrl(url) {
+  if (!url || url.indexOf('#/join') < 0) return;
+  try { if (sessionStorage.getItem('bh.lastAppUrl') === url) return; sessionStorage.setItem('bh.lastAppUrl', url); } catch (e) {}
+  var h = url.slice(url.indexOf('#/join'));
+  if (location.hash === h) return;
+  location.hash = h; // processed by the hashchange handler (stores connection + invite, joins if signed in)
+}
+(function initAppLinks() {
+  var App = window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.App;
+  if (!App) return;
+  try {
+    App.addListener('appUrlOpen', function (e) { handleAppUrl(e && e.url); });
+    App.getLaunchUrl().then(function (r) { if (r && r.url) setTimeout(function () { handleAppUrl(r.url); }, 300); });
+  } catch (e) { console.warn('app links', e); }
+})();
 function inviteLink() {
   var c = S.conn; var code = S.ws && S.ws.invite_code;
   return webBase() + '#/join?u=' + encodeURIComponent(c.url) + '&k=' + encodeURIComponent(c.key) + (code ? '&i=' + encodeURIComponent(code) : '');
@@ -154,6 +171,15 @@ document.addEventListener('click', function (e) {
   var g = e.target.closest('[data-go]'); if (g) { e.preventDefault(); go(g.getAttribute('data-go')); }
 });
 window.addEventListener('hashchange', function () {
+  // invite link opened in an already-running app (same document): process it now
+  if (location.hash.indexOf('#/join') === 0) {
+    var inv = parseInvite(location.hash), prev = getConn();
+    var connChanged = inv && inv.u && inv.k && (!prev || prev.url !== inv.u || prev.key !== inv.k);
+    handleInviteHash();
+    if (connChanged || !S.sb) { location.reload(); return; }
+    if (S.user) { teardown(); afterLogin(); } else renderAuth(true);
+    return;
+  }
   var h = location.hash;
   if (navStack.length > 1 && navStack[navStack.length - 2] === h) navStack.pop();
   else if (navStack[navStack.length - 1] !== h) { navStack.push(h); if (navStack.length > 100) navStack.shift(); }
@@ -1736,7 +1762,7 @@ function showUpdateBanner() {
 function checkForUpdate() { if (swReg) { swReg.update().then(function () { toast(swReg.waiting ? 'Update found' : 'You\'re on the latest (' + BUILD + ')'); if (swReg.waiting) showUpdateBanner(); }); } else toast('Build ' + BUILD + (window.Capacitor ? ' (app updates come as new APKs)' : '')); }
 
 /* ---------------- test hooks (read-only helpers used by the automated tests) ---------------- */
-window.__huddle = { S: S, md: md, parseMentions: parseMentions, buildSrcdoc: buildSrcdoc, rateOk: rateOk, inviteLink: function () { return inviteLink(); }, version: VERSION, build: BUILD };
+window.__huddle = { S: S, md: md, parseMentions: parseMentions, buildSrcdoc: buildSrcdoc, rateOk: rateOk, inviteLink: function () { return inviteLink(); }, appInviteLink: function () { return appInviteLink(); }, version: VERSION, build: BUILD };
 
 window.addEventListener('resize', debounce(function () { if ($('#shell')) renderSidebarOnly(); }, 250));
 registerSW();
