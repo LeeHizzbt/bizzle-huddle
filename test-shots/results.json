@@ -357,7 +357,7 @@
   "area": "apps",
   "name": "draft HTML stored",
   "ok": true,
-  "detail": "7942"
+  "detail": "5837"
  },
  {
   "area": "apps",
@@ -369,7 +369,7 @@
   "area": "apps",
   "name": "member can create a draft app",
   "ok": true,
-  "detail": "598d9815-78f5-496e-b381-3478a57090c0"
+  "detail": "f0d0fe00-d7e1-4109-b547-24f3c18dc13c"
  },
  {
   "area": "apps",
@@ -429,7 +429,7 @@
   "area": "automations",
   "name": "atomic claim: 3 concurrent claims -> exactly 1 run",
   "ok": true,
-  "detail": "[1, 0, 0]"
+  "detail": "[0, 1, 0]"
  },
  {
   "area": "automations",
@@ -477,7 +477,7 @@
   "area": "files",
   "name": "download returns the same bytes",
   "ok": true,
-  "detail": "hello from Bea 098828"
+  "detail": "hello from Bea 099558"
  },
  {
   "area": "files",
@@ -489,7 +489,7 @@
   "area": "ai",
   "name": "vision: Gemini reads the uploaded screenshot",
   "ok": true,
-  "detail": "The image shows the text **BH** and **v4.20** in bright green."
+  "detail": "I see **BH** and **v4.20** in the image!"
  },
  {
   "area": "security",
@@ -681,7 +681,7 @@
   "area": "bizzy",
   "name": "answers a how-to question with the user key",
   "ok": true,
-  "detail": "To make an agent reply, simply @mention it in a chat message while its owner's app is open."
+  "detail": "Simply @mention the agent in a message, and it will reply using its owner's API key while their app is open."
  },
  {
   "area": "bizzy",
@@ -717,7 +717,7 @@
   "area": "nav",
   "name": "back returns to previous view",
   "ok": true,
-  "detail": "http://127.0.0.1:8080/#/w/e53c0e48-07e7-4333-aa65-000c897e9eca/r/b7838884-472d-4fb1-98d4-7b2dcf296b16"
+  "detail": "http://127.0.0.1:8080/#/w/0a70a43d-7c01-477e-b750-a665599c7cda/r/f4616ff1-6798-4bdc-98ab-ca7277c1f762"
  },
  {
   "area": "pwa",
@@ -729,7 +729,7 @@
   "area": "pwa",
   "name": "cache name carries build id (cache-busting)",
   "ok": true,
-  "detail": "['bizzle-huddle-2026-10-15.8']"
+  "detail": "['bizzle-huddle-2026-10-15.9']"
  },
  {
   "area": "pwa",

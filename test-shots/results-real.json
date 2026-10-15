@@ -1,5 +1,5 @@
 {
- "stamp": "tjtuj5",
+ "stamp": "3w2g1p",
  "results": [
   {
    "area": "real",
@@ -125,7 +125,7 @@
    "area": "usage",
    "name": "usage_event recorded with tokens",
    "ok": true,
-   "detail": "[{'id': '7a9187b7-fef8-4e7b-a1ae-729879321228', 'prompt_tokens': 190, 'completion_tokens': 1}]"
+   "detail": "[{'id': 'f612dc9e-daa4-4986-8d04-1ecf135e4bfd', 'prompt_tokens': 208, 'completion_tokens': 1}]"
   },
   {
    "area": "approvals",
@@ -149,7 +149,7 @@
    "area": "apps",
    "name": "member creates a draft app",
    "ok": true,
-   "detail": "74dd64e4-e4dc-42fb-91c9-5a4069f7af56"
+   "detail": "ce76f4fd-3b7b-4868-ae06-71d7319137a4"
   },
   {
    "area": "apps",
@@ -161,7 +161,7 @@
    "area": "apps",
    "name": "admin publishes the app",
    "ok": true,
-   "detail": "[{'status': 'published', 'approved_by': '4e8146a3-3cf5-4264-a36e-6d651e84bd6b'}]"
+   "detail": "[{'status': 'published', 'approved_by': 'c077a67f-3c24-44c2-bbf9-30aa7dbe62e6'}]"
   },
   {
    "area": "apps",
@@ -209,13 +209,13 @@
    "area": "files",
    "name": "upload to real Storage + files row",
    "ok": true,
-   "detail": "[{'name': 'huddle-rt-tjtuj5.txt', 'path': '48581533-fdde-4bce-8b63-0681047af2b7/8a5dd76c-403f-4106-83b2-8f4cf8811c43/148ca78b-73df-4a56-82b5-20deec96333f-huddle-rt-tjtuj5.txt'}]"
+   "detail": "[{'name': 'huddle-rt-3w2g1p.txt', 'path': 'b397b34b-e78b-4ece-a874-e33d5b7e8779/c081c7cb-4d39-49cd-8043-c4df6201ad68/7e8e3adc-545e-4606-8290-3d9c4e4b2a01-huddle-rt-3w2g1p.txt'}]"
   },
   {
    "area": "files",
    "name": "other member downloads identical bytes",
    "ok": true,
-   "detail": "hello from Bob tjtuj5"
+   "detail": "hello from Bob 3w2g1p"
   },
   {
    "area": "files",

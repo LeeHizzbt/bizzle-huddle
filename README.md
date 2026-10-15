@@ -39,6 +39,9 @@ scripts/bump-version.sh  bumps the build id (service-worker cache busting); make
 tests/                 Playwright e2e (local Supabase) + real-Supabase checks
 ```
 
+## Android invite links
+The Android app opens invite links in the form `bizzlehuddle://join#/join?u=…&k=…&i=…` (the same `#` part as the web invite link). For example, test one with `adb shell am start -a android.intent.action.VIEW -d '<link>' com.nunyabizz.huddle`. Normal `https://` invite links open the web app.
+
 ## Swapping icons
 Drop a square PNG at `docs/icons/source.png` and run `python3 scripts/make-icons.py`. That regenerates the PWA icons and the Android launcher icons. The manifest already points at `docs/icons/`.
 
