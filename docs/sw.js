@@ -1,6 +1,6 @@
 /* Bizzle Huddle v4.20 service worker. CACHE name changes on every version bump (scripts/bump-version.sh). */
-var CACHE = 'bizzle-huddle-2026-10-15.7';
-var SHELL = ['./', 'index.html', 'css/app.css?v=2026-10-15.7', 'js/config.js?v=2026-10-15.7', 'js/ai.js?v=2026-10-15.7', 'js/app.js?v=2026-10-15.7',
+var CACHE = 'bizzle-huddle-2026-10-15.8';
+var SHELL = ['./', 'index.html', 'css/app.css?v=2026-10-15.8', 'js/config.js?v=2026-10-15.8', 'js/ai.js?v=2026-10-15.8', 'js/app.js?v=2026-10-15.8',
   'vendor/supabase.js?v=2.118.0', 'manifest.webmanifest', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/favicon.svg'];
 self.addEventListener('install', function (e) {
   e.waitUntil(caches.open(CACHE).then(function (c) { return c.addAll(SHELL); }));

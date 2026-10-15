@@ -1,5 +1,5 @@
 {
- "stamp": "vyal0k",
+ "stamp": "aj7v4q",
  "results": [
   {
    "area": "real",
@@ -96,6 +96,132 @@
    "name": "@mention counted for B live",
    "ok": true,
    "detail": ""
+  },
+  {
+   "area": "agents",
+   "name": "agent created (row saved, no key in it)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "agents",
+   "name": "B @mentions A's agent -> live reply via A's key (gemini)",
+   "ok": true,
+   "detail": "4"
+  },
+  {
+   "area": "security",
+   "name": "AI key not stored in the agents row",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "usage",
+   "name": "usage_event recorded with tokens",
+   "ok": true,
+   "detail": "[{'id': 'e4ccae98-b470-46bb-9a06-9d22f6ef2d77', 'prompt_tokens': 196, 'completion_tokens': 1}]"
+  },
+  {
+   "area": "approvals",
+   "name": "needs-approval reply lands in Approvals, not the room",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "approvals",
+   "name": "non-owner cannot approve (RPC/RLS)",
+   "ok": true,
+   "detail": "only the agent owner or an admin can decide"
+  },
+  {
+   "area": "approvals",
+   "name": "owner approves -> posted to room for everyone",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "apps",
+   "name": "member creates a draft app",
+   "ok": true,
+   "detail": "7d8c2d19-d29e-4e3c-be13-a9aa5b1f6382"
+  },
+  {
+   "area": "apps",
+   "name": "member cannot publish (DB trigger)",
+   "ok": true,
+   "detail": "Only a workspace admin can publish an app"
+  },
+  {
+   "area": "apps",
+   "name": "admin publishes the app",
+   "ok": true,
+   "detail": "[{'status': 'published', 'approved_by': '40f54d06-3b4a-4628-860e-27f163ca0e03'}]"
+  },
+  {
+   "area": "apps",
+   "name": "sandbox=\"allow-scripts\" only",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "apps",
+   "name": "app isolated from parent DOM",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "apps",
+   "name": "KV bridge write by B shows live in A (realtime)",
+   "ok": true,
+   "detail": "2"
+  },
+  {
+   "area": "automations",
+   "name": "automation saved",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "automations",
+   "name": "non-admin cannot claim",
+   "ok": true,
+   "detail": "0"
+  },
+  {
+   "area": "automations",
+   "name": "scheduled run claimed by admin app and answered by agent",
+   "ok": true,
+   "detail": "[{'status': 'ok'}]"
+  },
+  {
+   "area": "automations",
+   "name": "\"Run now\" adds a second ok run (history)",
+   "ok": true,
+   "detail": "[{'status': 'ok'}, {'status': 'ok'}]"
+  },
+  {
+   "area": "files",
+   "name": "upload to real Storage + files row",
+   "ok": true,
+   "detail": "[{'name': 'huddle-rt-aj7v4q.txt', 'path': '4a90883c-c291-4c22-a48c-c019ffe9b31d/896ab28b-8d25-4941-9f84-2a8259682d75/022fe4c1-49a9-42ed-9516-89e156b00152-huddle-rt-aj7v4q.txt'}]"
+  },
+  {
+   "area": "files",
+   "name": "other member downloads identical bytes",
+   "ok": true,
+   "detail": "hello from Bob aj7v4q"
+  },
+  {
+   "area": "files",
+   "name": "file listed for the other member",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "files",
+   "name": "uploader can delete the stored object (cleanup)",
+   "ok": true,
+   "detail": "1"
   },
   {
    "area": "console",

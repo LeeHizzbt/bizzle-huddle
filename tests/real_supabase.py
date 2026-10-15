@@ -80,6 +80,7 @@ with sync_playwright() as p:
             A.wait_for_selector('#o-name', timeout=30000); check('auth', 'sign-up (password) on real project -> onboarding', True)
             A.fill('#o-name', 'RT ' + STAMP); A.click('#o-go')
             wait(A, '() => window.__huddle && window.__huddle.S.ws', 30000); check('onboarding', 'workspace created', True)
+            wait(A, '() => location.hash === "#/invite-team"', 30000); check('onboarding', 'step 2: invite-team screen', True)
             wsid = S(A, 'S.ws.id')
             wait(A, '() => window.__huddle.S.rooms.some(r => r.name === "welcome")', 15000); check('onboarding', 'auto Welcome room', True)
             welcome = S(A, 'S.rooms.find(r => r.name === "welcome").id')

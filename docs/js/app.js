@@ -223,6 +223,7 @@ async function boot() {
 var loggingIn = false;
 async function afterLogin() {
   if (loggingIn) return; loggingIn = true;
+  var startHash = location.hash;
   try {
     if (/access_token/.test(location.hash)) history.replaceState(null, '', '#/');
     await loadProfile();
@@ -238,7 +239,8 @@ async function afterLogin() {
     if (!S.wsList.some(function (w) { return w.id === target; })) target = S.wsList[0] && S.wsList[0].id;
     if (!target) { go('onboard', true); return; }
     await enterWorkspace(target);
-    if (!r.ws || r.ws !== target) go('w/' + target, true); else render();
+    if (location.hash !== startHash && parseRoute().ws === target) render(); // user already navigated inside this workspace
+    else if (!r.ws || r.ws !== target) go('w/' + target, true); else render();
   } catch (e) { console.error(e); toast(e.message || String(e), true); renderFatal(e); }
   finally { loggingIn = false; }
 }
